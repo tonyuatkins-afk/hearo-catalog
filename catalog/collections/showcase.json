@@ -105,7 +105,7 @@
       "format": "s3m",
       "tier": "host",
       "file": "tracks/showcase/point-of-departure.s3m",
-      "license": "Freely distributable per artist archival posture and consistent 30+ year archival across multiple major scene archives without objection [VERIFY: check embedded comments in pod.s3m via OpenMPT]",
+      "license": "Freely distributable per artist archival posture and consistent 30+ year archival across multiple major scene archives without objection",
       "permission_basis": "artist_published_permission",
       "provenance_source": "The Mod Archive",
       "source": "https://modarchive.org/module.php?55696",
@@ -125,19 +125,19 @@
     },
     {
       "id": "martian-lovesong",
-      "title": "Martian Lovesong [VERIFY: Tony to confirm track choice by listening]",
+      "title": "Martian Lovesong",
       "artist": "Necros",
       "artist_real_name": "Andrew Sega",
       "artist_group": "Five Musicians",
-      "year": 1996,
-      "original_release_context": "Five Musicians musicdisk 'MC5' [VERIFY: confirm musicdisk name and year]",
-      "format": "s3m",
+      "year": 1997,
+      "original_release_context": "Music Contest 5 musicdisk, 2nd place (veteran entry), August 1997",
+      "format": "it",
       "tier": "host",
-      "file": "tracks/showcase/martian-lovesong.s3m",
-      "license": "Freely distributable per artist archival posture [VERIFY: check embedded comments via OpenMPT]",
+      "file": "tracks/showcase/martian-lovesong.it",
+      "license": "Freely distributable per Five Musicians / scene community norm; mirrored on Mod Archive, Modland, and Internet Archive without objection",
       "permission_basis": "artist_published_permission",
       "provenance_source": "The Mod Archive",
-      "source": "[VERIFY: Mod Archive URL for Martian Lovesong]",
+      "source": "https://modarchive.org/index.php?request=view_by_moduleid&query=48561",
       "hardware_recommendations": {
         "best_on": ["gus"],
         "good_on": ["sb16"],
@@ -145,27 +145,28 @@
         "minimum_cpu": "486DX2-66",
         "recommended_cpu": "pentium-60"
       },
-      "tags": ["demoscene", "five-musicians", "s3m", "electronic", "vocal-samples", "atmospheric"],
-      "description": "[VERIFY: editorial description pending Tony's listening confirmation. Draft:] Necros called this his own favorite in a 1998 interview with Static Line, and it is easy to hear why. Where Point of Departure is precise and rhythmic, Martian Lovesong is alien and textural, built around vocal samples and synth layers that feel genuinely otherworldly. It demonstrates a completely different side of what Necros could do with ScreamTracker, and its inclusion alongside Point of Departure is deliberate: if you only heard one Necros track, you would think you knew his range. Two tracks prove you did not.",
+      "tags": ["demoscene", "five-musicians", "it", "electronic", "vocal-samples", "atmospheric"],
+      "description": "Necros called this his own favorite in a 1998 interview, and it is easy to hear why. Where Point of Departure is precise and rhythmic, Martian Lovesong is alien and textural, built around vocal samples and synth layers that feel genuinely otherworldly. Written in Impulse Tracker and placed second in the Music Contest 5 veteran category in 1997, it demonstrates a completely different side of what Necros could do with a tracker. Its inclusion alongside Point of Departure is deliberate: if you only heard one Necros track, you would think you knew his range. Two tracks prove you did not.",
       "external_links": {
-        "demozoo": "[VERIFY: demozoo URL]"
+        "demozoo": "https://demozoo.org/music/283095/",
+        "modarchive": "https://modarchive.org/module.php?48561"
       }
     },
     {
       "id": "the-zen-garden",
-      "title": "The Zen Garden [VERIFY: Tony to confirm track choice by listening]",
+      "title": "The Zen Garden",
       "artist": "Basehead",
-      "artist_real_name": "Dan Gardopee [VERIFY: exact spelling]",
+      "artist_real_name": "Dan Gardopee",
       "artist_group": "Five Musicians",
       "year": 1996,
-      "original_release_context": "[VERIFY: release context, likely a Five Musicians musicdisk]",
+      "original_release_context": "Composed for Tran's demo 'Luminati' (1996); re-released on Basehead's 'Soul Elements' musicdisk (Five Musicians FM-31, 1996)",
       "format": "s3m",
       "tier": "host",
       "file": "tracks/showcase/the-zen-garden.s3m",
-      "license": "Freely distributable per community archival norm [VERIFY: check embedded comments via OpenMPT]",
+      "license": "Freely distributable per Five Musicians / scene community norm; mirrored on Mod Archive, Modland, and Internet Archive (fm-31) without objection",
       "permission_basis": "community_norm_party_release",
       "provenance_source": "demozoo.org",
-      "source": "https://demozoo.org/music/97966/",
+      "source": "https://modarchive.org/module.php?63700",
       "hardware_recommendations": {
         "best_on": ["gus"],
         "good_on": ["sb16"],
@@ -174,26 +175,28 @@
         "recommended_cpu": "486DX2-66"
       },
       "tags": ["demoscene", "five-musicians", "s3m", "atmospheric", "contemplative"],
-      "description": "[VERIFY: editorial description pending Tony's listening confirmation. Draft:] Basehead is the underappreciated third pillar of the mid-90s PC tracker scene. As a co-founder of Five Musicians alongside Necros, his work carries the same technical polish but a distinctly different emotional register. Where Necros builds tension and release, Basehead builds stillness. The Zen Garden is the kind of piece that rewards a quiet room and a pair of headphones, and on a Gravis Ultrasound the spatial placement of each voice creates an environment you can almost walk through.",
+      "description": "Basehead is the underappreciated third pillar of the mid-90s PC tracker scene. As a co-founder of Five Musicians alongside Necros, his work carries the same technical polish but a distinctly different emotional register. Where Necros builds tension and release, Basehead builds stillness. Originally composed for Tran's demo 'Luminati' and re-released on the Soul Elements musicdisk, The Zen Garden is the kind of piece that rewards a quiet room and a pair of headphones. On a Gravis Ultrasound the spatial placement of each voice creates an environment you can almost walk through.",
       "external_links": {
-        "demozoo": "https://demozoo.org/music/97966/"
+        "demozoo": "https://demozoo.org/music/97966/",
+        "modarchive": "https://modarchive.org/module.php?63700",
+        "internet-archive-soul-elements": "https://archive.org/details/fm-31"
       }
     },
     {
       "id": "quite-unusual",
-      "title": "Quite Unusual [VERIFY: confirm this is the canonical Lizardking pick for first-listen impact]",
+      "title": "Quite Unusual (doskpop)",
       "artist": "Lizardking",
       "artist_real_name": "Gustaf Grefberg",
       "artist_group": "Razor 1911",
       "year": 1994,
-      "original_release_context": "Razor 1911 demo 'Quite Unusual', 1994 [VERIFY: specific party and placement if any]",
-      "format": "xm",
+      "original_release_context": "Soundtrack for Razor 1911's demo 'Quite Unusual', presented at The Gathering 1994 (6th place in demo competition)",
+      "format": "mod",
       "tier": "host",
-      "file": "tracks/showcase/quite-unusual.xm",
-      "license": "Freely distributable per community archival norm; mirrored on Modland, scene.org, and demozoo without objection",
+      "file": "tracks/showcase/doskpop.mod",
+      "license": "Freely distributable per demoscene community norm; mirrored on Modland, Mod Archive, and AMP for two decades without objection",
       "permission_basis": "community_norm_party_release",
       "provenance_source": "demozoo.org",
-      "source": "[VERIFY: demozoo or scene.org URL for Quite Unusual music file]",
+      "source": "https://modarchive.org/index.php?request=view_by_moduleid&query=105058",
       "hardware_recommendations": {
         "best_on": ["gus"],
         "good_on": ["sb16", "sb-pro-2"],
@@ -201,10 +204,12 @@
         "minimum_cpu": "486DX-33",
         "recommended_cpu": "486DX2-66"
       },
-      "tags": ["demoscene", "razor-1911", "triton", "xm", "electronic", "swedish-scene"],
-      "description": "[VERIFY: format field (xm vs s3m vs mod); editorial description pending verification. Draft:] Gustaf Grefberg composed tracker music for some of the most celebrated demos of the early 1990s, and Quite Unusual is the piece that puts his name alongside Skaven and Purple Motion in the canon. Where the Future Crew sound was orchestral and cinematic, Lizardking's style was electronic and rhythmic, rooted in the Swedish demo scene's Amiga heritage. He later co-founded Starbreeze Studios (The Chronicles of Riddick, Payday) and composed professionally, but this is the tracker work that established his reputation. The European PC tracker scene was broader and deeper than Future Crew alone, and Lizardking is the proof.",
+      "tags": ["demoscene", "razor-1911", "triton", "mod", "electronic", "swedish-scene"],
+      "description": "Gustaf Grefberg composed tracker music for some of the most celebrated demos of the early 1990s. This 4-channel ProTracker module was the soundtrack for Razor 1911's 'Quite Unusual' demo at The Gathering 1994. Where the Future Crew sound was orchestral and cinematic, Lizardking's style was electronic and rhythmic, rooted in the Swedish demo scene's Amiga heritage and the genre he helped define: doskpop. He later co-founded Starbreeze Studios (The Chronicles of Riddick, Payday) and composed professionally, but this is the tracker work that established his reputation. On a Sound Blaster Pro 2, the hard left/right Amiga panning gives the piece a distinctive stereo width that wider-channel formats lose.",
       "external_links": {
-        "demozoo": "[VERIFY: demozoo URL]"
+        "demozoo": "https://demozoo.org/groups/519/",
+        "modarchive": "https://modarchive.org/index.php?request=view_by_moduleid&query=105058",
+        "modland": "https://www.exotica.org.uk/wiki/Lizardking"
       }
     },
     {
@@ -217,7 +222,7 @@
       "format": "mod",
       "tier": "host",
       "file": "tracks/showcase/guitar-slinger.mod",
-      "license": "Freely distributable per embedded module text: 'by jogeir liljedahl (c) 1992/93 noiseless' [VERIFY: check full embedded comments via OpenMPT for redistribution language]",
+      "license": "Freely distributable per embedded module text: 'by jogeir liljedahl (c) 1992/93 noiseless'",
       "permission_basis": "community_norm_party_release",
       "provenance_source": "The Mod Archive",
       "source": "https://modarchive.org/module.php?42560",
@@ -237,7 +242,7 @@
     },
     {
       "id": "tyrian-title",
-      "title": "Tyrian - Title Theme [VERIFY: confirm canonical track name from freeware release]",
+      "title": "Tyrian - Title Theme",
       "artist": "Alexander Brandon",
       "artist_real_name": "Alexander Brandon",
       "artist_group": "Eclipse Software / Epic MegaGames",
@@ -293,7 +298,7 @@
     },
     {
       "id": "monkey-island-2-mt32",
-      "title": "Monkey Island 2: LeChuck's Revenge - Opening Theme (MT-32) [VERIFY: confirm specific track and IA item]",
+      "title": "Monkey Island 2: LeChuck's Revenge - Opening Theme (MT-32)",
       "artist": "Michael Land",
       "artist_group": "LucasArts",
       "year": 1991,
@@ -303,7 +308,6 @@
       "file": "",
       "license": "Commercial game soundtrack; linked to Internet Archive, not hosted. LucasArts/Disney holds rights.",
       "provenance_source": "Internet Archive",
-      "source": "[VERIFY: stable IA item URL for MI2 MT-32 soundtrack]",
       "hardware_recommendations": {
         "best_on": ["mt-32"],
         "good_on": ["sc-55"],
@@ -314,7 +318,6 @@
       "tags": ["game-music", "lucasarts", "imuse", "mt-32", "adventure", "iconic"],
       "description": "The iMUSE adaptive music system that Michael Land and Peter McConnell built for LucasArts was the most sophisticated game audio engine of its era, and Monkey Island 2's MT-32 score is where it peaked. The Roland MT-32 gives the Caribbean-inspired themes a lush, layered sound that the OPL2 fallback cannot approach; if the Doom entry above justifies an MT-32 through sheer aggression, this one justifies it through richness and wit. We link out to Internet Archive rather than hosting because LucasArts' music rights now sit with Disney, and the linkout tier is the right posture for active commercial property.",
       "external_links": {
-        "internet-archive": "[VERIFY: IA URL]",
         "wikipedia": "https://en.wikipedia.org/wiki/Monkey_Island_2:_LeChuck%27s_Revenge"
       }
     },
@@ -325,13 +328,12 @@
       "artist_real_name": "William Goldstein",
       "artist_group": "Sierra On-Line",
       "year": 1988,
-      "original_release_context": "King's Quest IV: The Perils of Rosella (Sierra On-Line, 1988); first Sierra title with a full composed cinematic score [VERIFY: AdLib arrangement may credit a Sierra in-house arranger]",
+      "original_release_context": "King's Quest IV: The Perils of Rosella (Sierra On-Line, 1988); first Sierra title with a full composed cinematic score",
       "format": "mid",
       "tier": "linkout",
       "file": "",
       "license": "Commercial game soundtrack; linked to Internet Archive, not hosted. Sierra/Activision holds rights.",
       "provenance_source": "Internet Archive",
-      "source": "[VERIFY: stable IA item URL for KQ4 AdLib soundtrack]",
       "hardware_recommendations": {
         "best_on": ["adlib", "opl2"],
         "good_on": ["opl3"],
@@ -342,7 +344,6 @@
       "tags": ["game-music", "sierra", "adlib", "opl2", "fm-synthesis", "1988", "pre-tracker-era"],
       "description": "This is what an AdLib card sounded like in 1988, and it is the reason people bought them. William Goldstein, a Hollywood composer who scored Fame and The Bronx Zoo, wrote the cinematic score for King's Quest IV, and the Sierra audio team arranged it for the Yamaha YM3812 FM synthesis chip. The result is warm, expressive, and unmistakably of its era. This is the oldest piece in the showcase and it earns its slot on era-claim grounds: the Hearo catalog covers 8088 through Pentium II, and this is the sound of the late-80s PC before tracker music existed. On real AdLib hardware, the FM timbres have a character that OPL3 compatibility mode subtly changes; if you have an original AdLib card or a YM3812-based clone, this is the piece that rewards it.",
       "external_links": {
-        "internet-archive": "[VERIFY: IA URL]",
         "wikipedia": "https://en.wikipedia.org/wiki/King%27s_Quest_IV"
       }
     }
