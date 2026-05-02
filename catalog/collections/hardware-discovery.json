@@ -1,0 +1,174 @@
+{
+  "id": "hardware-discovery",
+  "title": "Hardware Discovery",
+  "subtitle": "Six tracks that sound different on the hardware Hearo detects",
+  "description": "The Hearo Showcase demonstrates the tracker scene at its peak. This collection demonstrates the hardware. Each track was chosen because it sounds meaningfully different on the specific vintage audio hardware it targets. If you have an OPL3 chip, these tracks prove the difference between compatibility mode and native 4-operator synthesis. If you have a Tandy 1000, these are the pieces that prove its 3-voice chip was real music hardware, not a toy. If you have never heard an AdLib Gold, the Dune entry will make you want one.",
+  "curator": "Tony Atkins",
+  "last_updated": "2026-05-02",
+  "tracks": [
+    {
+      "id": "cybersphere-level-bgm-1",
+      "title": "Cybersphere: Level BGM 1",
+      "artist": "Clay Hellman",
+      "artist_group": "Psycon",
+      "year": 1996,
+      "original_release_context": "Cybersphere (Psycon, 1996); entire game hand-coded in x86 assembly with native OPL3 4-operator FM synthesis. Released as freeware by the author on 18 April 2006.",
+      "format": "vgm",
+      "tier": "host",
+      "file": "tracks/hardware-discovery/cybersphere-level-bgm-1.vgm",
+      "license": "Freeware since 2006 per author release via DOS Games Archive",
+      "permission_basis": "artist_published_permission",
+      "provenance_source": "VGMRips",
+      "source": "https://vgmrips.net/packs/pack/cybersphere-ibm-pc-at",
+      "hardware_recommendations": {
+        "best_on": ["opl3"],
+        "good_on": [],
+        "playable_on": [],
+        "minimum_cpu": "386DX-33",
+        "recommended_cpu": "486DX-33"
+      },
+      "tags": ["opl3", "4-operator", "fm-synthesis", "freeware", "game-music", "dos-assembly"],
+      "description": "Most DOS games treated the OPL3 as a louder OPL2 and never touched its 4-operator mode. Cybersphere is the rare exception: Clay Hellman hand-coded the entire game in x86 assembly and programmed the YMF262 directly, flipping register 0x104 to enable 4-op voices that produce richer, more complex FM timbres than anything the OPL2 could manage. Level BGM 1 is the confirmed 4-op showcase track. On real OPL3 hardware (a Sound Blaster 16 CT2230 or equivalent), the difference between this and OPL2 compatibility mode is immediately audible: fuller brass, rounder bass, harmonics that 2-operator FM simply cannot produce. This is what the OPL3 was designed to do, and almost nobody used it for.",
+      "external_links": {
+        "vgmrips": "https://vgmrips.net/packs/pack/cybersphere-ibm-pc-at",
+        "dosgamesarchive": "https://www.dosgamesarchive.com/download/cybersphere"
+      }
+    },
+    {
+      "id": "lands-of-lore-scotia",
+      "title": "Lands of Lore: The Throne of Chaos: Scotia vs. Dawn",
+      "artist": "Frank Klepacki",
+      "artist_group": "Westwood Studios",
+      "year": 1993,
+      "original_release_context": "Lands of Lore: The Throne of Chaos (Westwood Studios / Virgin Interactive, 1993); Westwood's HMI driver exposed OPL3 4-op voices on compatible hardware",
+      "format": "mid",
+      "tier": "linkout",
+      "file": "",
+      "license": "Commercial game soundtrack; Xeen Music's archival OPL3 recording is licensed by Electronic Arts. Linked, not hosted.",
+      "provenance_source": "Xeen Music (Bandcamp)",
+      "source": "https://xeenmusic.bandcamp.com/album/lands-of-lore-i-the-throne-of-chaos-soundtrack-adlib-sound-blaster-opl3",
+      "hardware_recommendations": {
+        "best_on": ["opl3"],
+        "good_on": ["opl2", "adlib"],
+        "playable_on": ["mt-32"],
+        "minimum_cpu": "386DX-33",
+        "recommended_cpu": "486DX-33"
+      },
+      "tags": ["opl3", "4-operator", "fm-synthesis", "game-music", "westwood", "rpg", "frank-klepacki"],
+      "description": "Frank Klepacki composed the Lands of Lore score for Westwood Studios before he became famous for Command & Conquer. Westwood's HMI audio driver was one of the few commercial engines that actually enabled OPL3 4-operator mode on compatible Sound Blaster hardware, producing richer FM voices than the standard 2-op path. The Xeen Music archival project recorded this OPL3 rendition from a real Sound Blaster 16 CT2230 and licensed it through Electronic Arts. Scotia vs. Dawn is the track that demonstrates Klepacki's ear for dramatic scoring on hardware most games underused.",
+      "external_links": {
+        "xeen-music-bandcamp": "https://xeenmusic.bandcamp.com/album/lands-of-lore-i-the-throne-of-chaos-soundtrack-adlib-sound-blaster-opl3"
+      }
+    },
+    {
+      "id": "dune-spice-opera",
+      "title": "Dune: Spice Opera",
+      "artist": "Stephane Picq",
+      "artist_group": "Cryo Interactive / Exxos",
+      "year": 1992,
+      "original_release_context": "Dune (Cryo Interactive / Virgin Interactive, 1992); one of the few DOS game scores written directly for the OPL3/AdLib Gold FM synthesis chip rather than through a generic MIDI translator",
+      "format": "mid",
+      "tier": "linkout",
+      "file": "",
+      "license": "Commercial soundtrack; Stephane Picq's Spice Opera album is commercially available via his Exxos label on Bandcamp. Linked, not hosted.",
+      "provenance_source": "Exxos (Bandcamp)",
+      "source": "https://music.exxos.ch/",
+      "hardware_recommendations": {
+        "best_on": ["opl3", "adlib-gold"],
+        "good_on": ["opl2", "adlib"],
+        "playable_on": ["sb16"],
+        "minimum_cpu": "286",
+        "recommended_cpu": "386DX-33"
+      },
+      "tags": ["opl3", "adlib-gold", "fm-synthesis", "game-music", "cryo", "ambient", "world-music"],
+      "description": "Stephane Picq did not go through a MIDI translator. He programmed the OPL3 FM registers directly, and the result is one of the most atmospheric game soundtracks of the DOS era. The Dune score on an AdLib Gold (with its additional control chip for stereo, surround, and reverb) is a different listening experience from any other FM synthesis music on the PC. The Spice Opera pieces blend Middle Eastern scales with electronic textures in a way that the hardware's quirks actually enhance rather than limit. Picq released the soundtrack commercially through his Exxos label. If you have never heard what a skilled FM programmer can do with direct register access, this is the education.",
+      "external_links": {
+        "exxos-music": "https://music.exxos.ch/",
+        "wikipedia": "https://en.wikipedia.org/wiki/Dune_(video_game)"
+      }
+    },
+    {
+      "id": "kq4-agi-tandy",
+      "title": "King's Quest IV: The Perils of Rosella: Opening Overture (Tandy 3-Voice)",
+      "artist": "William Goldstein",
+      "artist_real_name": "William Goldstein",
+      "artist_group": "Sierra On-Line",
+      "year": 1988,
+      "original_release_context": "King's Quest IV: The Perils of Rosella, AGI version (Sierra On-Line, 1988); the last major Sierra AGI release, scored by Hollywood composer William Goldstein",
+      "format": "mid",
+      "tier": "linkout",
+      "file": "",
+      "license": "Commercial game soundtrack; Sierra/Activision holds rights. Linked, not hosted.",
+      "provenance_source": "Internet Archive",
+      "source": "[VERIFY: IA item URL for KQ4 AGI]",
+      "hardware_recommendations": {
+        "best_on": ["tandy-3-voice"],
+        "good_on": [],
+        "playable_on": ["pc-speaker"],
+        "minimum_cpu": "8088",
+        "recommended_cpu": "8088"
+      },
+      "tags": ["tandy", "3-voice", "sn76496", "game-music", "sierra", "agi", "1988", "pre-tracker-era"],
+      "description": "The Hearo Showcase includes King's Quest IV's AdLib rendition. This entry is the same game on different hardware, and the difference is the entire point of this collection. On a Tandy 1000 with its TI SN76496 3-voice chip, Goldstein's overture becomes a three-part counterpoint composition where each voice carries melodic weight. On PC speaker, you hear only the top voice. That gap is what Hearo detects and what this catalog exists to celebrate. A reviewer at Compute! in 1988 called KQ4 '40 minutes of the best sound available on any computer disk anywhere,' and the Tandy version is what they were hearing. Play both entries back to back on the right hardware and you will understand why hardware detection matters.",
+      "external_links": {
+        "internet-archive": "[VERIFY: IA URL]",
+        "wikipedia": "https://en.wikipedia.org/wiki/King%27s_Quest_IV"
+      }
+    },
+    {
+      "id": "maniac-mansion-tandy",
+      "title": "Maniac Mansion: Title Theme (Tandy/PCjr 3-Voice)",
+      "artist": "David Lawrence",
+      "artist_group": "Lucasfilm Games",
+      "year": 1987,
+      "original_release_context": "Maniac Mansion (Lucasfilm Games, 1987); one of the first DOS adventure games with explicit PCjr/Tandy 3-voice music support",
+      "format": "mid",
+      "tier": "linkout",
+      "file": "",
+      "license": "Commercial game soundtrack; Disney/LucasArts holds rights. Linked, not hosted.",
+      "provenance_source": "Internet Archive",
+      "source": "[VERIFY: IA item URL for Maniac Mansion DOS]",
+      "hardware_recommendations": {
+        "best_on": ["tandy-3-voice", "pcjr"],
+        "good_on": [],
+        "playable_on": ["pc-speaker"],
+        "minimum_cpu": "8088",
+        "recommended_cpu": "8088"
+      },
+      "tags": ["tandy", "3-voice", "pcjr", "sn76496", "game-music", "lucasfilm", "scumm", "1987"],
+      "description": "Before iMUSE, before MIDI, before the Sound Blaster existed, Lucasfilm Games shipped Maniac Mansion with explicit support for the PCjr and Tandy 1000's 3-voice sound chip. David Lawrence's title theme is the piece most people remember, and on Tandy hardware it has a bouncy, slightly sinister character that the single-voice PC speaker version entirely loses. Maniac Mansion alongside King's Quest IV in this collection demonstrates that by 1987-1988, both Sierra and Lucasfilm understood that the Tandy's 3-voice chip was real music hardware and composed accordingly. ScummVM's Tandy emulation is the most reliable way to hear this today if you do not have the original hardware.",
+      "external_links": {
+        "internet-archive": "[VERIFY: IA URL]",
+        "wikipedia": "https://en.wikipedia.org/wiki/Maniac_Mansion"
+      }
+    },
+    {
+      "id": "rad2-opl3-groove",
+      "title": "OPL3 Groove (Reality Adlib Tracker 2 Demo)",
+      "artist": "Reality",
+      "artist_group": "Reality Productions",
+      "year": 2018,
+      "original_release_context": "Bundled as demo content with Reality Adlib Tracker 2 (2018); explicitly exercises OPL3 4-operator instruments and the eight OPL3 waveforms",
+      "format": "rad",
+      "tier": "host",
+      "file": "tracks/hardware-discovery/rad2-opl3-groove.rad",
+      "license": "Redistributable per Reality Productions' distribution terms; shipped as public demo content with the RAD 2 tracker",
+      "permission_basis": "artist_published_permission",
+      "provenance_source": "Reality Productions",
+      "source": "https://www.3eality.com/productions/reality-adlib-tracker/docs",
+      "hardware_recommendations": {
+        "best_on": ["opl3"],
+        "good_on": [],
+        "playable_on": ["opl2"],
+        "minimum_cpu": "386DX-33",
+        "recommended_cpu": "486DX-33"
+      },
+      "tags": ["opl3", "4-operator", "fm-synthesis", "rad", "demoscene", "tracker", "modern-retro"],
+      "description": "Reality Adlib Tracker 2 is a modern tracker built specifically for the OPL2 and OPL3 FM synthesis chips, and this demo composition ships with it to showcase what the tools can do. It explicitly exercises 4-operator FM instruments and all eight OPL3 waveforms, making it the cleanest possible demonstration of what the YMF262 chip is capable of when a composer targets it directly rather than going through a generic MIDI translator. Where Cybersphere proves a 1996 game used 4-op, this track proves a 2018 composer still found the hardware worth writing for. The RAD format is native to FM synthesis in the way that MOD is native to sample-based playback: lean, direct, and purpose-built.",
+      "external_links": {
+        "reality-productions": "https://www.3eality.com/productions/reality-adlib-tracker/docs",
+        "itch-io": "https://realityproductions.itch.io/rad"
+      }
+    }
+  ]
+}

@@ -32,7 +32,7 @@
     },
     "format": {
       "type": "string",
-      "enum": ["mod","s3m","xm","it","stm","669","mtm","mid","rmi","mus","wav","voc","mp3","flac","ogg","sbi","ibk","bnk","lds"]
+      "enum": ["mod","s3m","xm","it","stm","669","mtm","mid","rmi","mus","wav","voc","mp3","flac","ogg","sbi","ibk","bnk","lds","vgm","rad"]
     },
     "tier": {
       "type": "string",
