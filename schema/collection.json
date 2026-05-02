@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hearo.barelybooting.com/schema/collection.json",
+  "title": "Hearo Collection",
+  "description": "A curated set of tracks served as a single manifest.",
+  "type": "object",
+  "required": ["id", "title", "tracks"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "curator": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "tracks": {
+      "type": "array",
+      "items": {
+        "$ref": "track.json"
+      }
+    }
+  }
+}

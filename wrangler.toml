@@ -1,0 +1,11 @@
+name = "hearo-catalog"
+main = "worker/src/index.js"
+compatibility_date = "2024-01-01"
+
+[[r2_buckets]]
+binding = "HEARO_BUCKET"
+bucket_name = "hearo-catalog"
+
+[[routes]]
+pattern = "hearo.barelybooting.com/*"
+zone_name = "barelybooting.com"

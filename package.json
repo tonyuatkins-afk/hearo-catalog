@@ -1,0 +1,14 @@
+{
+  "name": "hearo-catalog",
+  "version": "0.1.0",
+  "description": "Catalog server for the Hearo DOS audio player",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

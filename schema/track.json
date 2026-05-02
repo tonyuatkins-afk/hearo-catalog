@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hearo.barelybooting.com/schema/track.json",
+  "title": "Hearo Track",
+  "description": "A single track entry in a Hearo catalog collection.",
+  "type": "object",
+  "required": ["id", "title", "format", "file"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Lowercase letters, digits, and hyphens only. Stable identifier within the catalog."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artist": {
+      "type": "string"
+    },
+    "artist_group": {
+      "type": "string",
+      "description": "Demoscene group, label, or collective the artist released under."
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1980,
+      "maximum": 2030
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "mod",
+        "s3m",
+        "xm",
+        "it",
+        "stm",
+        "669",
+        "mtm",
+        "mid",
+        "rmi",
+        "mus",
+        "wav",
+        "voc",
+        "mp3",
+        "flac",
+        "ogg",
+        "sbi",
+        "ibk",
+        "bnk"
+      ]
+    },
+    "file": {
+      "type": "string",
+      "description": "Path under /tracks/ in R2, e.g. tracks/showcase/example.mod"
+    },
+    "size_bytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "duration_seconds": {
+      "type": "number",
+      "minimum": 0
+    },
+    "channels": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 64
+    },
+    "sample_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "uses_16bit_samples": {
+      "type": "boolean"
+    },
+    "total_sample_memory": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total bytes of sample data when fully loaded into memory."
+    },
+    "hardware_recommendations": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "best_on": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "good_on": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "playable_on": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "minimum_cpu": {
+          "type": "string"
+        },
+        "recommended_cpu": {
+          "type": "string"
+        },
+        "fpu_enhanced": {
+          "type": "boolean"
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "description": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "description": "Where the track was obtained, e.g. Mod Archive URL or original release."
+    },
+    "license": {
+      "type": "string",
+      "description": "Explicit redistribution license. Required to be unambiguous before inclusion."
+    },
+    "external_links": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  }
+}

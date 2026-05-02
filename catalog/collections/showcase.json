@@ -1,0 +1,9 @@
+{
+  "id": "showcase",
+  "title": "Hearo Showcase",
+  "subtitle": "Demonstrating what Hearo can do",
+  "description": "A hand-picked selection demonstrating Hearo's hardware-aware capabilities. Each track is chosen to highlight a specific feature or hardware tier, from PC speaker compositions playable on an 8088 through OPL3 showcases and GUS hardware-mixed tracker modules.",
+  "curator": "Tony Atkins",
+  "last_updated": "2026-05-02",
+  "tracks": []
+}
