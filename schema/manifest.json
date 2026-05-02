@@ -4,21 +4,22 @@
   "title": "Hearo Catalog Manifest",
   "description": "Top-level catalog index served at /catalog/index.json and /.",
   "type": "object",
-  "required": ["catalog_version", "service_name", "collections"],
+  "required": ["catalog_version", "service_name", "collections", "policy"],
   "additionalProperties": false,
   "properties": {
-    "catalog_version": {
-      "type": "string"
-    },
-    "service_name": {
-      "type": "string"
-    },
-    "last_updated": {
-      "type": "string",
-      "format": "date"
-    },
-    "description": {
-      "type": "string"
+    "catalog_version": { "type": "string" },
+    "service_name": { "type": "string" },
+    "last_updated": { "type": "string", "format": "date" },
+    "description": { "type": "string" },
+    "policy": {
+      "type": "object",
+      "required": ["copyright_url", "takedown_url", "dmca_agent_id"],
+      "additionalProperties": false,
+      "properties": {
+        "copyright_url": { "type": "string", "description": "URL to the published catalog copyright policy." },
+        "takedown_url": { "type": "string", "description": "URL to the published takedown procedure." },
+        "dmca_agent_id": { "type": "string", "description": "US Copyright Office DMCA agent registration number." }
+      }
     },
     "collections": {
       "type": "array",
@@ -27,28 +28,14 @@
         "required": ["id", "title", "track_count", "url"],
         "additionalProperties": false,
         "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^[a-z0-9-]+$"
-          },
-          "title": {
-            "type": "string"
-          },
-          "track_count": {
-            "type": "integer",
-            "minimum": 0
-          },
-          "url": {
-            "type": "string"
-          }
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string" },
+          "track_count": { "type": "integer", "minimum": 0 },
+          "url": { "type": "string" }
         }
       }
     },
-    "tonys_pick_of_the_week": {
-      "type": ["object", "null"]
-    },
-    "featured_track": {
-      "type": ["object", "null"]
-    }
+    "tonys_pick_of_the_week": { "type": ["object", "null"] },
+    "featured_track": { "type": ["object", "null"] }
   }
 }

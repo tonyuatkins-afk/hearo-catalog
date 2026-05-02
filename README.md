@@ -46,6 +46,16 @@ Audio files are not stored in this repository. They live in Cloudflare R2 under 
 
 The catalog is intentionally small and opinionated. It celebrates vintage PC hardware: PC speaker compositions that sing on an 8088, AdLib and OPL3 showcases, Sound Blaster classics, and Gravis Ultrasound tracker modules that put hardware mixing to work. Every track is chosen for a reason, every license is explicit, and every entry tells you what hardware will make it sing.
 
+## How we handle rights
+
+Hearo Catalog is a curated index, not a free-for-all. Every track in the catalog falls into one of three hosting tiers:
+
+- **Host.** Demoscene tracker modules and other works released into the scene under freely-distributable terms or long-standing community norms. We host these on R2 with documented attribution and a clear permission basis.
+- **Linkout.** Game music rips and works with fragmented or active rights situations. The catalog metadata exists for discoverability; the audio lives on Internet Archive or another established archive.
+- **Bandcamp.** Commercial releases by living artists. We never host these. The catalog entry credits the work and links to the artist's storefront, with the artist's explicit permission.
+
+Every track entry credits the artist by handle and (where the artist has themselves published it) real name, group affiliation, year, original release context, and provenance source. We honor takedown and removal requests promptly via either an informal email path or formal DMCA notice. The full policy is in [COPYRIGHT.md](COPYRIGHT.md); the takedown procedure is in [TAKEDOWN.md](TAKEDOWN.md). The catalog operator is a US Copyright Office registered DMCA designated agent (DMCA-1072235).
+
 ## License
 
 Code in this repository is MIT licensed. See [LICENSE.md](LICENSE.md). Audio files have their own per-track licenses, recorded in catalog metadata; the MIT license here does not extend to the music.

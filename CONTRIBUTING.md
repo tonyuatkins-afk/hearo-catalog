@@ -16,10 +16,17 @@ If you want to understand the contract, start with the schemas. They are the sou
 
 Every track that goes into the catalog must meet all of the following:
 
-- **Explicit license.** The `license` field is required to be unambiguous. "Public domain", "CC BY 4.0", "permission granted by author 2025-XX-XX with email on file", and similar are all fine. Blank, "unknown", or "probably ok" are not. If we cannot establish redistribution rights, we do not host it.
+- **Tier assigned.** The `tier` field is `host`, `linkout`, or `bandcamp`. The choice is governed by the COPYRIGHT.md tier model.
+- **Explicit license.** The `license` field is required to be unambiguous. "Public domain", "CC BY 4.0", "Permission granted by author 2026-05-15 with email on file", and similar are all fine. Blank, "unknown", or "probably ok" are not. If we cannot establish redistribution rights, we do not host it.
+- **Permission basis recorded for host tier.** The `permission_basis` field must be one of the six defined enum values when `tier` is `host`. See COPYRIGHT.md for the meaning of each. The field is forbidden when `tier` is `linkout` or `bandcamp`.
+- **Permission record for explicit permission and bandcamp.** When `permission_basis` is `artist_explicit_permission`, or when `tier` is `bandcamp`, the `permission_record` object must be populated with date, channel, and scope.
+- **Provenance source recorded.** The `provenance_source` field identifies the canonical archive or release point of the work, distinct from the specific copy's source URL.
 - **Hardware recommendations populated.** The whole point of Hearo is matching music to hardware. A track without `hardware_recommendations` does not earn its place.
 - **A real description.** The `description` field should explain why this track is in the catalog. What does it showcase? What hardware sings on it? What should a listener notice? Generic blurbs do not help anyone.
 - **A clear source.** The `source` field should point at the original release or canonical archive entry, not a random reupload.
+- **Attribution.** `artist`, and where the artist has themselves published it, `artist_real_name`. Group affiliation in `artist_group`. Year and original release context.
+
+Validation is enforced by the schema and by `npm run validate`. Run validation before committing any track changes.
 
 ## Suggesting a track
 

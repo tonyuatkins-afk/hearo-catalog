@@ -1,8 +1,13 @@
 {
-  "catalog_version": "0.1.0",
+  "catalog_version": "1.0.0",
   "service_name": "Hearo Catalog by Barely Booting",
   "last_updated": "2026-05-02",
   "description": "A curated collection of vintage music for the Hearo DOS audio player. Each track is hand-selected and tagged with hardware affinity to help you discover music that sounds great on your specific vintage PC configuration.",
+  "policy": {
+    "copyright_url": "https://github.com/tonyuatkins-afk/hearo-catalog/blob/main/COPYRIGHT.md",
+    "takedown_url": "https://github.com/tonyuatkins-afk/hearo-catalog/blob/main/TAKEDOWN.md",
+    "dmca_agent_id": "DMCA-1072235"
+  },
   "collections": [
     {
       "id": "showcase",

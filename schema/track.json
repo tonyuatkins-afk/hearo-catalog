@@ -4,7 +4,7 @@
   "title": "Hearo Track",
   "description": "A single track entry in a Hearo catalog collection.",
   "type": "object",
-  "required": ["id", "title", "format", "file"],
+  "required": ["id", "title", "format", "tier", "license", "provenance_source"],
   "additionalProperties": false,
   "properties": {
     "id": {
@@ -12,69 +12,42 @@
       "pattern": "^[a-z0-9-]+$",
       "description": "Lowercase letters, digits, and hyphens only. Stable identifier within the catalog."
     },
-    "title": {
-      "type": "string",
-      "minLength": 1
-    },
+    "title": { "type": "string", "minLength": 1 },
     "artist": {
-      "type": "string"
+      "type": "string",
+      "description": "Primary display name. Handle for tracker artists (e.g. Skaven), real name for artists who release under their real name (e.g. Alexander Brandon)."
+    },
+    "artist_real_name": {
+      "type": "string",
+      "description": "Real name of the artist, if separate from the handle and previously published by the artist themselves. Used for moral-rights attribution. Leave blank if the artist publishes only under a handle."
     },
     "artist_group": {
       "type": "string",
       "description": "Demoscene group, label, or collective the artist released under."
     },
-    "year": {
-      "type": "integer",
-      "minimum": 1980,
-      "maximum": 2030
+    "year": { "type": "integer", "minimum": 1980, "maximum": 2030 },
+    "original_release_context": {
+      "type": "string",
+      "description": "Short note on the original release context, e.g. 'Assembly 1995 multichannel music compo, 1st place' or 'Released on Bandcamp 2018'."
     },
     "format": {
       "type": "string",
-      "enum": [
-        "mod",
-        "s3m",
-        "xm",
-        "it",
-        "stm",
-        "669",
-        "mtm",
-        "mid",
-        "rmi",
-        "mus",
-        "wav",
-        "voc",
-        "mp3",
-        "flac",
-        "ogg",
-        "sbi",
-        "ibk",
-        "bnk"
-      ]
+      "enum": ["mod","s3m","xm","it","stm","669","mtm","mid","rmi","mus","wav","voc","mp3","flac","ogg","sbi","ibk","bnk","lds"]
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["host", "linkout", "bandcamp"],
+      "description": "Hosting tier per Hearo Catalog content policy. 'host' means the audio file lives on R2 under tracks/. 'linkout' means the catalog metadata points at an external archive (typically Internet Archive); the file field is empty and external_links carries the canonical URL. 'bandcamp' means the work is a commercial release by a living artist; the file field is empty and external_links carries the artist's storefront URL."
     },
     "file": {
       "type": "string",
-      "description": "Path under /tracks/ in R2, e.g. tracks/showcase/example.mod"
+      "description": "Path under /tracks/ in R2, e.g. tracks/showcase/example.mod. Required and non-empty when tier is 'host'. Must be empty string when tier is 'linkout' or 'bandcamp'."
     },
-    "size_bytes": {
-      "type": "integer",
-      "minimum": 0
-    },
-    "duration_seconds": {
-      "type": "number",
-      "minimum": 0
-    },
-    "channels": {
-      "type": "integer",
-      "minimum": 1,
-      "maximum": 64
-    },
-    "sample_count": {
-      "type": "integer",
-      "minimum": 0
-    },
-    "uses_16bit_samples": {
-      "type": "boolean"
-    },
+    "size_bytes": { "type": "integer", "minimum": 0 },
+    "duration_seconds": { "type": "number", "minimum": 0 },
+    "channels": { "type": "integer", "minimum": 1, "maximum": 64 },
+    "sample_count": { "type": "integer", "minimum": 0 },
+    "uses_16bit_samples": { "type": "boolean" },
     "total_sample_memory": {
       "type": "integer",
       "minimum": 0,
@@ -84,47 +57,92 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "best_on": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "good_on": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "playable_on": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "minimum_cpu": {
-          "type": "string"
-        },
-        "recommended_cpu": {
-          "type": "string"
-        },
-        "fpu_enhanced": {
-          "type": "boolean"
-        }
+        "best_on": { "type": "array", "items": { "type": "string" } },
+        "good_on": { "type": "array", "items": { "type": "string" } },
+        "playable_on": { "type": "array", "items": { "type": "string" } },
+        "minimum_cpu": { "type": "string" },
+        "recommended_cpu": { "type": "string" },
+        "fpu_enhanced": { "type": "boolean" }
       }
     },
-    "tags": {
-      "type": "array",
-      "items": { "type": "string" }
-    },
-    "description": {
-      "type": "string"
-    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "description": { "type": "string" },
     "source": {
       "type": "string",
-      "description": "Where the track was obtained, e.g. Mod Archive URL or original release."
+      "description": "Where this specific copy was obtained, e.g. a Mod Archive URL or original release URL."
+    },
+    "provenance_source": {
+      "type": "string",
+      "description": "Canonical archive or release point of provenance. Distinct from source: where source describes the specific copy we have, provenance_source identifies the authoritative reference (e.g. 'Modland', 'The Mod Archive', 'AMP', 'Internet Archive', 'demozoo.org', 'artist Bandcamp')."
     },
     "license": {
       "type": "string",
-      "description": "Explicit redistribution license. Required to be unambiguous before inclusion."
+      "description": "Explicit redistribution license. Required to be unambiguous before inclusion. Examples: 'Public domain', 'CC BY 4.0', 'Freely distributable per author statement at futurecrew.com/skaven/tracker_music.shtml', 'Permission granted by artist via email 2026-05-15'."
+    },
+    "permission_basis": {
+      "type": "string",
+      "enum": [
+        "embedded_freely_distributable",
+        "artist_published_permission",
+        "artist_explicit_permission",
+        "community_norm_party_release",
+        "public_domain",
+        "creative_commons"
+      ],
+      "description": "How we know we have the right to host this audio. Required when tier is 'host'. Forbidden when tier is 'linkout' or 'bandcamp', where the rights story is carried by tier itself plus, for bandcamp, permission_record. See COPYRIGHT.md for the full meaning of each value."
+    },
+    "permission_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Documentation of explicit permission. Required when permission_basis is 'artist_explicit_permission' and when tier is 'bandcamp'. Optional otherwise.",
+      "properties": {
+        "date": { "type": "string", "format": "date" },
+        "channel": { "type": "string", "description": "How permission was communicated, e.g. 'email', 'public artist statement', 'Bandcamp DM'." },
+        "scope": { "type": "string", "description": "What the artist agreed to, e.g. 'catalog inclusion plus linkout, no hosting' or 'host original tracker module, link to Bandcamp for remasters'." },
+        "reference": { "type": "string", "description": "URL or identifier for the permission record, e.g. message ID, public statement URL, archived correspondence." }
+      },
+      "required": ["date", "channel", "scope"]
     },
     "external_links": {
       "type": "object",
       "additionalProperties": { "type": "string" }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "tier": { "const": "host" } } },
+      "then": {
+        "required": ["file", "permission_basis"],
+        "properties": {
+          "file": { "minLength": 1 }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "tier": { "enum": ["linkout", "bandcamp"] } } },
+      "then": {
+        "properties": {
+          "file": { "type": "string", "maxLength": 0 },
+          "external_links": { "minProperties": 1 }
+        },
+        "required": ["external_links"],
+        "not": { "required": ["permission_basis"] }
+      }
+    },
+    {
+      "if": {
+        "properties": { "permission_basis": { "const": "artist_explicit_permission" } },
+        "required": ["permission_basis"]
+      },
+      "then": {
+        "required": ["permission_record"]
+      }
+    },
+    {
+      "if": { "properties": { "tier": { "const": "bandcamp" } } },
+      "then": {
+        "required": ["permission_record"]
+      }
+    }
+  ]
 }
