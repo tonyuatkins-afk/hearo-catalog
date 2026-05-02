@@ -1,9 +1,350 @@
 {
   "id": "showcase",
   "title": "Hearo Showcase",
-  "subtitle": "Demonstrating what Hearo can do",
-  "description": "A hand-picked selection demonstrating Hearo's hardware-aware capabilities. Each track is chosen to highlight a specific feature or hardware tier, from PC speaker compositions playable on an 8088 through OPL3 showcases and GUS hardware-mixed tracker modules.",
+  "subtitle": "Twelve tracks that explain why this hardware existed",
+  "description": "Twelve tracks centered on the mid-90s tracker peak, with anchors that reach back to the AdLib era and out to the canonical PC game soundtracks. Each track was chosen for first-listen impact: the kind of piece that makes you understand why someone built a 486 with a Gravis Ultrasound, why Sierra shipped an AdLib card with King's Quest, and why Bobby Prince's E1M1 is the most recognized thirty seconds in DOS gaming. The showcase is deliberately tracker-heavy because that is where the scene's peak documented work lives. Broader coverage (Sound Canvas era, PC Speaker deep-dive, chip music) follows in future thematic collections.",
   "curator": "Tony Atkins",
   "last_updated": "2026-05-02",
-  "tracks": []
+  "tracks": [
+    {
+      "id": "second-reality-skaven",
+      "title": "UnreaL ][ - The 2nd Reality",
+      "artist": "Skaven",
+      "artist_real_name": "Peter Hajba",
+      "artist_group": "Future Crew",
+      "year": 1993,
+      "original_release_context": "Assembly 1993 PC demo competition, 1st place (Second Reality demo, intro and ending music)",
+      "format": "s3m",
+      "tier": "host",
+      "file": "tracks/showcase/second-reality-skaven.s3m",
+      "license": "Freely distributable per author statement at futurecrew.com/skaven/tracker_music.shtml: 'All the songs on this page are freeware unless otherwise specified. They may be freely distributed in unmodified form for personal enjoyment.'",
+      "permission_basis": "artist_published_permission",
+      "provenance_source": "The Mod Archive",
+      "source": "https://modarchive.org/module.php?60400",
+      "hardware_recommendations": {
+        "best_on": ["gus"],
+        "good_on": ["sb-pro-2", "sb16"],
+        "playable_on": ["opl3"],
+        "minimum_cpu": "386DX-33",
+        "recommended_cpu": "486DX2-66"
+      },
+      "tags": ["demoscene", "future-crew", "assembly-1993", "s3m", "orchestral", "epic", "compo-winner"],
+      "description": "The intro and ending music from the most famous PC demo ever made. Skaven composed this at age 17 on Scream Tracker 3, and it still sounds like a film score that just happens to fit in 400 kilobytes. On a Gravis Ultrasound, every channel gets its own hardware-mixed voice and the orchestral depth opens up in a way that software mixing on a Sound Blaster cannot quite match. This is the track that made an entire generation of PC users realize their beige boxes could sing.",
+      "external_links": {
+        "demozoo": "https://demozoo.org/music/99580/",
+        "modarchive": "https://modarchive.org/module.php?60400"
+      }
+    },
+    {
+      "id": "catch-that-goblin",
+      "title": "Catch That Goblin!",
+      "artist": "Skaven",
+      "artist_real_name": "Peter Hajba",
+      "artist_group": "Future Crew",
+      "year": 1995,
+      "original_release_context": "Assembly 1995 multichannel music competition, 1st place",
+      "format": "s3m",
+      "tier": "host",
+      "file": "tracks/showcase/catch-that-goblin.s3m",
+      "license": "Freely distributable per author statement at futurecrew.com/skaven/tracker_music.shtml",
+      "permission_basis": "community_norm_party_release",
+      "provenance_source": "The Mod Archive",
+      "source": "https://modarchive.org/module.php?34654",
+      "hardware_recommendations": {
+        "best_on": ["gus"],
+        "good_on": ["sb16", "sb-pro-2"],
+        "playable_on": ["opl3"],
+        "minimum_cpu": "486DX-33",
+        "recommended_cpu": "486DX2-66"
+      },
+      "tags": ["demoscene", "future-crew", "assembly-1995", "s3m", "orchestral", "cartoon", "compo-winner"],
+      "description": "Danny Elfman meets Spike Jones in a 470KB Scream Tracker file. Skaven won his third Assembly music compo with this piece, a minute and fifty-six seconds of cartoon-orchestral slapstick that sounds like it belongs in a Pixar short. The 12-channel arrangement is absurdly tight for its length, and on a GUS the brass stabs and timpani hits land with physical presence. If Second Reality proved the PC could be cinematic, Catch That Goblin proved it could be funny.",
+      "external_links": {
+        "demozoo": "https://demozoo.org/music/7422/",
+        "modarchive": "https://modarchive.org/module.php?34654",
+        "scene-org": "https://files.scene.org/view/parties/1995/assembly95/music/multichan/ctgoblin.zip"
+      }
+    },
+    {
+      "id": "starshine",
+      "title": "Starshine",
+      "artist": "Purple Motion",
+      "artist_real_name": "Jonne Valtonen",
+      "artist_group": "Future Crew",
+      "year": 1993,
+      "original_release_context": "Assembly 1993 multichannel music competition, 5th place; also released on Future Crew's first musicdisk",
+      "format": "s3m",
+      "tier": "host",
+      "file": "tracks/showcase/starshine.s3m",
+      "license": "Freely distributable per Future Crew community norm and consistent 30+ year archival across multiple major scene archives without objection",
+      "permission_basis": "community_norm_party_release",
+      "provenance_source": "The Mod Archive",
+      "source": "https://modarchive.org/module.php?60693",
+      "hardware_recommendations": {
+        "best_on": ["gus"],
+        "good_on": ["sb-pro-2"],
+        "playable_on": ["opl3"],
+        "minimum_cpu": "386DX-33",
+        "recommended_cpu": "486DX-33"
+      },
+      "tags": ["demoscene", "future-crew", "assembly-1993", "s3m", "melodic", "classical", "piano"],
+      "description": "Purple Motion's classical training shows up in every bar of this piece. The piano melody that enters about thirty seconds in is one of the most recognizable hooks in tracker music, and the way it layers over pad chords and a gentle beat demonstrates why Scream Tracker 3 was the right tool for this kind of composition. Valtonen went on to arrange orchestral music for Square Enix and conduct at concert halls, but the emotional core was already here at age 17. A GUS or Sound Blaster Pro 2 lets the panning breathe; on anything less, it still works, just closer together.",
+      "external_links": {
+        "demozoo": "https://demozoo.org/music/6720/",
+        "modarchive": "https://modarchive.org/module.php?60693"
+      }
+    },
+    {
+      "id": "point-of-departure",
+      "title": "Point of Departure",
+      "artist": "Necros",
+      "artist_real_name": "Andrew Sega",
+      "artist_group": "Five Musicians",
+      "year": 1995,
+      "original_release_context": "Five Musicians musicdisk 'Progression', June 1995",
+      "format": "s3m",
+      "tier": "host",
+      "file": "tracks/showcase/point-of-departure.s3m",
+      "license": "Freely distributable per artist archival posture and consistent 30+ year archival across multiple major scene archives without objection [VERIFY: check embedded comments in pod.s3m via OpenMPT]",
+      "permission_basis": "artist_published_permission",
+      "provenance_source": "The Mod Archive",
+      "source": "https://modarchive.org/module.php?55696",
+      "hardware_recommendations": {
+        "best_on": ["gus"],
+        "good_on": ["sb16", "sb-pro-2"],
+        "playable_on": ["opl3"],
+        "minimum_cpu": "486DX-33",
+        "recommended_cpu": "486DX2-66"
+      },
+      "tags": ["demoscene", "five-musicians", "s3m", "atmospheric", "breakbeat", "ambient"],
+      "description": "One of the most-cited tracker modules of the 1990s. Necros opens with wavelike string pads that build for half a minute before the breakbeat drops, and from there the track moves between atmospheric drift and rhythmic drive without ever losing its thread. The Mod Archive community rates it consistently at 10/10 across two decades of reviews. On a GUS, the 16-channel mix has room to spread; on an SB16 the software mixing compresses slightly but the composition carries it. Written for the Five Musicians musicdisk 'Progression' in the summer of 1995, this is the piece people mean when they say Necros was the best tracker musician of his generation.",
+      "external_links": {
+        "demozoo": "https://demozoo.org/music/276926/",
+        "modarchive": "https://modarchive.org/module.php?55696"
+      }
+    },
+    {
+      "id": "martian-lovesong",
+      "title": "Martian Lovesong [VERIFY: Tony to confirm track choice by listening]",
+      "artist": "Necros",
+      "artist_real_name": "Andrew Sega",
+      "artist_group": "Five Musicians",
+      "year": 1996,
+      "original_release_context": "Five Musicians musicdisk 'MC5' [VERIFY: confirm musicdisk name and year]",
+      "format": "s3m",
+      "tier": "host",
+      "file": "tracks/showcase/martian-lovesong.s3m",
+      "license": "Freely distributable per artist archival posture [VERIFY: check embedded comments via OpenMPT]",
+      "permission_basis": "artist_published_permission",
+      "provenance_source": "The Mod Archive",
+      "source": "[VERIFY: Mod Archive URL for Martian Lovesong]",
+      "hardware_recommendations": {
+        "best_on": ["gus"],
+        "good_on": ["sb16"],
+        "playable_on": ["sb-pro-2"],
+        "minimum_cpu": "486DX2-66",
+        "recommended_cpu": "pentium-60"
+      },
+      "tags": ["demoscene", "five-musicians", "s3m", "electronic", "vocal-samples", "atmospheric"],
+      "description": "[VERIFY: editorial description pending Tony's listening confirmation. Draft:] Necros called this his own favorite in a 1998 interview with Static Line, and it is easy to hear why. Where Point of Departure is precise and rhythmic, Martian Lovesong is alien and textural, built around vocal samples and synth layers that feel genuinely otherworldly. It demonstrates a completely different side of what Necros could do with ScreamTracker, and its inclusion alongside Point of Departure is deliberate: if you only heard one Necros track, you would think you knew his range. Two tracks prove you did not.",
+      "external_links": {
+        "demozoo": "[VERIFY: demozoo URL]"
+      }
+    },
+    {
+      "id": "the-zen-garden",
+      "title": "The Zen Garden [VERIFY: Tony to confirm track choice by listening]",
+      "artist": "Basehead",
+      "artist_real_name": "Dan Gardopee [VERIFY: exact spelling]",
+      "artist_group": "Five Musicians",
+      "year": 1996,
+      "original_release_context": "[VERIFY: release context, likely a Five Musicians musicdisk]",
+      "format": "s3m",
+      "tier": "host",
+      "file": "tracks/showcase/the-zen-garden.s3m",
+      "license": "Freely distributable per community archival norm [VERIFY: check embedded comments via OpenMPT]",
+      "permission_basis": "community_norm_party_release",
+      "provenance_source": "demozoo.org",
+      "source": "https://demozoo.org/music/97966/",
+      "hardware_recommendations": {
+        "best_on": ["gus"],
+        "good_on": ["sb16"],
+        "playable_on": ["sb-pro-2"],
+        "minimum_cpu": "486DX-33",
+        "recommended_cpu": "486DX2-66"
+      },
+      "tags": ["demoscene", "five-musicians", "s3m", "atmospheric", "contemplative"],
+      "description": "[VERIFY: editorial description pending Tony's listening confirmation. Draft:] Basehead is the underappreciated third pillar of the mid-90s PC tracker scene. As a co-founder of Five Musicians alongside Necros, his work carries the same technical polish but a distinctly different emotional register. Where Necros builds tension and release, Basehead builds stillness. The Zen Garden is the kind of piece that rewards a quiet room and a pair of headphones, and on a Gravis Ultrasound the spatial placement of each voice creates an environment you can almost walk through.",
+      "external_links": {
+        "demozoo": "https://demozoo.org/music/97966/"
+      }
+    },
+    {
+      "id": "quite-unusual",
+      "title": "Quite Unusual [VERIFY: confirm this is the canonical Lizardking pick for first-listen impact]",
+      "artist": "Lizardking",
+      "artist_real_name": "Gustaf Grefberg",
+      "artist_group": "Razor 1911",
+      "year": 1994,
+      "original_release_context": "Razor 1911 demo 'Quite Unusual', 1994 [VERIFY: specific party and placement if any]",
+      "format": "xm",
+      "tier": "host",
+      "file": "tracks/showcase/quite-unusual.xm",
+      "license": "Freely distributable per community archival norm; mirrored on Modland, scene.org, and demozoo without objection",
+      "permission_basis": "community_norm_party_release",
+      "provenance_source": "demozoo.org",
+      "source": "[VERIFY: demozoo or scene.org URL for Quite Unusual music file]",
+      "hardware_recommendations": {
+        "best_on": ["gus"],
+        "good_on": ["sb16", "sb-pro-2"],
+        "playable_on": ["opl3"],
+        "minimum_cpu": "486DX-33",
+        "recommended_cpu": "486DX2-66"
+      },
+      "tags": ["demoscene", "razor-1911", "triton", "xm", "electronic", "swedish-scene"],
+      "description": "[VERIFY: format field (xm vs s3m vs mod); editorial description pending verification. Draft:] Gustaf Grefberg composed tracker music for some of the most celebrated demos of the early 1990s, and Quite Unusual is the piece that puts his name alongside Skaven and Purple Motion in the canon. Where the Future Crew sound was orchestral and cinematic, Lizardking's style was electronic and rhythmic, rooted in the Swedish demo scene's Amiga heritage. He later co-founded Starbreeze Studios (The Chronicles of Riddick, Payday) and composed professionally, but this is the tracker work that established his reputation. The European PC tracker scene was broader and deeper than Future Crew alone, and Lizardking is the proof.",
+      "external_links": {
+        "demozoo": "[VERIFY: demozoo URL]"
+      }
+    },
+    {
+      "id": "guitar-slinger",
+      "title": "Guitar Slinger",
+      "artist": "Jogeir Liljedahl",
+      "artist_group": "Noiseless",
+      "year": 1993,
+      "original_release_context": "Released through the Amiga group Noiseless, 1992/93",
+      "format": "mod",
+      "tier": "host",
+      "file": "tracks/showcase/guitar-slinger.mod",
+      "license": "Freely distributable per embedded module text: 'by jogeir liljedahl (c) 1992/93 noiseless' [VERIFY: check full embedded comments via OpenMPT for redistribution language]",
+      "permission_basis": "community_norm_party_release",
+      "provenance_source": "The Mod Archive",
+      "source": "https://modarchive.org/module.php?42560",
+      "hardware_recommendations": {
+        "best_on": ["sb-pro-2"],
+        "good_on": ["gus", "sb16"],
+        "playable_on": ["sb"],
+        "minimum_cpu": "386SX-25",
+        "recommended_cpu": "386DX-33"
+      },
+      "tags": ["amiga", "noiseless", "mod", "4-channel", "guitar", "acoustic", "protracker"],
+      "description": "Four channels. That is all ProTracker gave you on the Amiga, and Jogeir Liljedahl made it sound like a full band. Guitar Slinger uses sampled acoustic guitar riffs, flute, and a simple drum loop to build something that sounds physically impossible in 397 kilobytes of 8-bit samples across four voices. The Mod Archive community calls it one of the greatest 4-channel compositions ever written, and they are not wrong. On a Sound Blaster Pro 2 with stereo output, the hard left/right panning of the Amiga channel layout creates a wide stage. This is the track that demonstrates what the MOD format was, before S3M and IT expanded the channel count and made everything easier.",
+      "external_links": {
+        "demozoo": "https://demozoo.org/music/6353/",
+        "modarchive": "https://modarchive.org/module.php?42560"
+      }
+    },
+    {
+      "id": "tyrian-title",
+      "title": "Tyrian - Title Theme [VERIFY: confirm canonical track name from freeware release]",
+      "artist": "Alexander Brandon",
+      "artist_real_name": "Alexander Brandon",
+      "artist_group": "Eclipse Software / Epic MegaGames",
+      "year": 1995,
+      "original_release_context": "Tyrian (Epic MegaGames, 1995); game released as freeware by Jason Emery in 2004, music released for free by Alexander Brandon in August 2010",
+      "format": "lds",
+      "tier": "host",
+      "file": "tracks/showcase/tyrian-title.lds",
+      "license": "Music released for free by Alexander Brandon in August 2010; game released as freeware by Jason Emery in 2004",
+      "permission_basis": "artist_published_permission",
+      "provenance_source": "DOS Games Archive / Internet Archive",
+      "source": "https://archive.org/details/Tyrian2000",
+      "hardware_recommendations": {
+        "best_on": ["opl2", "adlib"],
+        "good_on": ["opl3", "opl3-sa3"],
+        "playable_on": ["sb"],
+        "minimum_cpu": "386SX-25",
+        "recommended_cpu": "486DX-33"
+      },
+      "tags": ["game-music", "tyrian", "epic-megagames", "lds", "opl2", "adlib", "freeware"],
+      "description": "Tyrian is the rare case where a commercial DOS game's music is both freely redistributable and genuinely great. Alexander Brandon composed the soundtrack using the Loudness Sound System, an OPL2-targeted format that talks directly to the Yamaha FM synthesis chip. On real AdLib or OPL2 hardware, the FM timbres have a gritty warmth that no sample-based playback can reproduce. Brandon went on to compose for Unreal Tournament and Deus Ex, but Tyrian is where he started, and the LDS format is a piece of DOS audio history that Hearo is built to celebrate. This is the only host-tier game music entry in the inaugural showcase, and it earns that distinction because the freeware release makes its rights story unambiguous.",
+      "external_links": {
+        "wikipedia": "https://en.wikipedia.org/wiki/Tyrian_(video_game)",
+        "internet-archive": "https://archive.org/details/Tyrian2000"
+      }
+    },
+    {
+      "id": "doom-e1m1",
+      "title": "At Doom's Gate (E1M1)",
+      "artist": "Bobby Prince",
+      "year": 1993,
+      "original_release_context": "DOOM (id Software, 1993), Episode 1 Map 1",
+      "format": "mid",
+      "tier": "linkout",
+      "file": "",
+      "license": "Commercial game soundtrack; linked to Internet Archive item, not hosted. Bobby Prince retains publishing copyright.",
+      "provenance_source": "Internet Archive",
+      "source": "https://archive.org/details/bobby-prince-doom-ost",
+      "hardware_recommendations": {
+        "best_on": ["mt-32", "sc-55"],
+        "good_on": ["opl2", "adlib", "opl3"],
+        "playable_on": ["sb"],
+        "minimum_cpu": "386SX-25",
+        "recommended_cpu": "386DX-33"
+      },
+      "tags": ["game-music", "doom", "id-software", "midi", "metal", "iconic"],
+      "description": "The most recognized thirty seconds in DOS gaming. Bobby Prince's E1M1 theme rips through an MT-32 or Sound Canvas with the heavy-metal energy that defined id Software's aesthetic, but it also works surprisingly well on an OPL2 where the FM synthesis gives the guitar patches a buzzy, aggressive character all their own. Prince, who is a copyright lawyer by training, retains the publishing rights to the Doom score and released it on CD in 1997. We link to the Internet Archive's FLAC rip rather than hosting directly, because the rights situation is fragmented and active, and IA has the institutional resilience for this category of content. If you have an MT-32, this is the track that justifies the hardware.",
+      "external_links": {
+        "internet-archive-ost": "https://archive.org/details/bobby-prince-doom-ost",
+        "internet-archive-cd": "https://archive.org/details/doom-music",
+        "doomwiki": "https://doomwiki.org/wiki/Idgames_archive"
+      }
+    },
+    {
+      "id": "monkey-island-2-mt32",
+      "title": "Monkey Island 2: LeChuck's Revenge - Opening Theme (MT-32) [VERIFY: confirm specific track and IA item]",
+      "artist": "Michael Land",
+      "artist_group": "LucasArts",
+      "year": 1991,
+      "original_release_context": "Monkey Island 2: LeChuck's Revenge (LucasArts, 1991), iMUSE adaptive music system",
+      "format": "mid",
+      "tier": "linkout",
+      "file": "",
+      "license": "Commercial game soundtrack; linked to Internet Archive, not hosted. LucasArts/Disney holds rights.",
+      "provenance_source": "Internet Archive",
+      "source": "[VERIFY: stable IA item URL for MI2 MT-32 soundtrack]",
+      "hardware_recommendations": {
+        "best_on": ["mt-32"],
+        "good_on": ["sc-55"],
+        "playable_on": ["opl2", "opl3"],
+        "minimum_cpu": "386SX-16",
+        "recommended_cpu": "386DX-33"
+      },
+      "tags": ["game-music", "lucasarts", "imuse", "mt-32", "adventure", "iconic"],
+      "description": "The iMUSE adaptive music system that Michael Land and Peter McConnell built for LucasArts was the most sophisticated game audio engine of its era, and Monkey Island 2's MT-32 score is where it peaked. The Roland MT-32 gives the Caribbean-inspired themes a lush, layered sound that the OPL2 fallback cannot approach; if the Doom entry above justifies an MT-32 through sheer aggression, this one justifies it through richness and wit. We link out to Internet Archive rather than hosting because LucasArts' music rights now sit with Disney, and the linkout tier is the right posture for active commercial property.",
+      "external_links": {
+        "internet-archive": "[VERIFY: IA URL]",
+        "wikipedia": "https://en.wikipedia.org/wiki/Monkey_Island_2:_LeChuck%27s_Revenge"
+      }
+    },
+    {
+      "id": "kings-quest-4-adlib",
+      "title": "King's Quest IV: The Perils of Rosella - Title Theme (AdLib)",
+      "artist": "William Goldstein",
+      "artist_real_name": "William Goldstein",
+      "artist_group": "Sierra On-Line",
+      "year": 1988,
+      "original_release_context": "King's Quest IV: The Perils of Rosella (Sierra On-Line, 1988); first Sierra title with a full composed cinematic score [VERIFY: AdLib arrangement may credit a Sierra in-house arranger]",
+      "format": "mid",
+      "tier": "linkout",
+      "file": "",
+      "license": "Commercial game soundtrack; linked to Internet Archive, not hosted. Sierra/Activision holds rights.",
+      "provenance_source": "Internet Archive",
+      "source": "[VERIFY: stable IA item URL for KQ4 AdLib soundtrack]",
+      "hardware_recommendations": {
+        "best_on": ["adlib", "opl2"],
+        "good_on": ["opl3"],
+        "playable_on": [],
+        "minimum_cpu": "8088",
+        "recommended_cpu": "286"
+      },
+      "tags": ["game-music", "sierra", "adlib", "opl2", "fm-synthesis", "1988", "pre-tracker-era"],
+      "description": "This is what an AdLib card sounded like in 1988, and it is the reason people bought them. William Goldstein, a Hollywood composer who scored Fame and The Bronx Zoo, wrote the cinematic score for King's Quest IV, and the Sierra audio team arranged it for the Yamaha YM3812 FM synthesis chip. The result is warm, expressive, and unmistakably of its era. This is the oldest piece in the showcase and it earns its slot on era-claim grounds: the Hearo catalog covers 8088 through Pentium II, and this is the sound of the late-80s PC before tracker music existed. On real AdLib hardware, the FM timbres have a character that OPL3 compatibility mode subtly changes; if you have an original AdLib card or a YM3812-based clone, this is the piece that rewards it.",
+      "external_links": {
+        "internet-archive": "[VERIFY: IA URL]",
+        "wikipedia": "https://en.wikipedia.org/wiki/King%27s_Quest_IV"
+      }
+    }
+  ]
 }
